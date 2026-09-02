@@ -20,10 +20,14 @@ if (signupForm) {
             password: password
         };
 
+<<<<<<< HEAD
         localStorage.setItem(
             "playbookUser",
             JSON.stringify(user)
         );
+=======
+        localStorage.setItem("playbookUser", JSON.stringify(user));
+>>>>>>> 2e8ae609054582956aa98694ef954454c38b267d
 
         alert("Account created successfully!");
 
@@ -76,6 +80,7 @@ if (loginForm) {
 // SHOW USER NAME IN HEADER
 // =========================
 
+<<<<<<< HEAD
 let user =
     JSON.parse(localStorage.getItem("playbookUser"));
 
@@ -84,6 +89,12 @@ let loggedIn =
 
 let userArea =
     document.getElementById("userArea");
+=======
+let user = JSON.parse(localStorage.getItem("playbookUser"));
+let loggedIn = localStorage.getItem("loggedIn");
+
+let userArea = document.getElementById("userArea");
+>>>>>>> 2e8ae609054582956aa98694ef954454c38b267d
 
 if (user && loggedIn === "true" && userArea) {
 
@@ -96,7 +107,10 @@ if (user && loggedIn === "true" && userArea) {
             Logout
         </button>
     `;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e8ae609054582956aa98694ef954454c38b267d
 }
 
 
@@ -111,6 +125,7 @@ function logout() {
     window.location.reload();
 
 }
+<<<<<<< HEAD
 
 
 // =========================
@@ -476,3 +491,7 @@ if (bookingList) {
     }
 
 }
+=======
+// booking 
+localStorage.setItem("bookings", JSON.stringify(bookings));
+>>>>>>> 2e8ae609054582956aa98694ef954454c38b267d
